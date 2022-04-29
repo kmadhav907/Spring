@@ -1,5 +1,7 @@
 package com.springDemo.SpringCore.dibasic;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Employee {
 	private int id;
 	private String name;
@@ -7,7 +9,7 @@ public class Employee {
 	public int getId() {
 		return id;
 	}
-
+	@Required
 	public void setId(int id) {
 		this.id = id;
 	}
